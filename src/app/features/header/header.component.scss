@@ -1,13 +1,30 @@
 @use '../../../styles/variables';
 
 .main-header {
+  transition: background-color 0.5s ease;
+  border-radius: 0 0 20px 20px;
+
+  &.scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 30px rgb(variables.$color-black, 0.5);
+    background-color: variables.$link-bg-color;
+  }
+
   &__content {
-  width: 1660px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 15px;
-}
+    width: 1660px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+    transition: padding 0.5s ease;
+
+    &.scroll {
+      padding: 10px 15px;
+    }
+  }
 
   &__logo {
     max-width: 100%;
@@ -15,6 +32,12 @@
     object-fit: contain;
     display: block;
     cursor: pointer;
+
+    &.scroll {
+      width: 125px;
+      height: 60px;
+    }
+
   }
 
   &__list {

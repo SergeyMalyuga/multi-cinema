@@ -6,7 +6,6 @@
 }
 
 body {
-  position: relative;
   font-family: variables.$font-family-primary;
   color: variables.$text-main-color;
   background-color: variables.$bg-main-color;
@@ -15,13 +14,12 @@ body {
   line-height: 30px;
   letter-spacing: 0;
   margin: 0;
-  padding: 0 122px 30px;
 
 }
 
 .decorate {
   position: relative;
-  width: 1660px;
+  width: 1904px;
   margin: 0 auto;
 
   &::before {
@@ -49,8 +47,6 @@ body {
     background-repeat: no-repeat;
     z-index: -1;
   }
-
-
 }
 
 .container {
