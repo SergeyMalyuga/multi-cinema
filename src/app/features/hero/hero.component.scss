@@ -1,0 +1,29 @@
+@use '../../../styles/variables';
+
+.hero {
+  &__title {
+    width: 1150px;
+    color: variables.$text-main-color;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 100%;
+    margin: 0 0 51px;
+  }
+
+  &__text {
+    margin: 0 0 45px;
+    width: 658px;
+  }
+
+  &__link {
+    display: block;
+    width: 529px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgb(variables.$color-black, 0.25);
+    background-color: variables.$link-bg-color;
+    padding: 22px 56px;
+    text-align: center;
+  }
+}
