@@ -1,0 +1,75 @@
+@use '../../../styles/variables';
+
+.main-header {
+  &__content {
+  width: 1660px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+  &__logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 118px;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$text-main-color;
+    line-height: 100%;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0;
+      height: 1px;
+      inset: 0;
+      background-color: variables.$link-bg-color;
+      transition: width 0.4s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 37px;
+  }
+
+  &__action--search {
+    border: none;
+    background: none;
+    width: 35px;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__action--login {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+}
+

@@ -1,11 +1,69 @@
 @use './styles/variables';
 @use './styles/fonts';
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
+  position: relative;
   font-family: variables.$font-family-primary;
   color: variables.$text-main-color;
+  background-color: variables.$bg-main-color;
   font-weight: 500;
   font-size: 25px;
   line-height: 30px;
   letter-spacing: 0;
+  margin: 0;
+  padding: 0 122px 30px;
+
+}
+
+.decorate {
+  position: relative;
+  width: 1660px;
+  margin: 0 auto;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 827px;
+    height: 1573px;
+    background-image: url("assets/images/decorate-right.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 962px;
+    left: 0;
+    width: 511px;
+    height: 1472px;
+    background-image: url("assets/images/decorate-left.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
 }
