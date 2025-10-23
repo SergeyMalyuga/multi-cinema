@@ -1,0 +1,55 @@
+@use '../../../styles/variables';
+
+.popfilm {
+  margin-bottom: 210px;
+
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0 0 46px;
+  }
+
+  &__card {
+    width: 1172px;
+    margin: 0 auto;
+    padding: 30px 98px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgb(146 146 146 / 20%);
+    background: variables.$bg-main-color;
+  }
+
+  &__image {
+    display: block;
+    border-radius: 33px;
+    margin: 0 0 25px;
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 924.67px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 0 rgb(variables.$color-black, 0.25);
+    text-align: center;
+    text-decoration: none;
+    color: variables.$bg-main-color;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    background-color: variables.$link-bg-color;
+    transition: background-color 0.3s ease,
+    transform 0.3s ease;
+
+    &:hover {
+      background-color: variables.$link-bg-color-hover;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

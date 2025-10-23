@@ -31,7 +31,9 @@
     line-height: 36px;
     color: variables.$bg-main-color;
     text-align: center;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
       background-color: variables.$link-bg-color-hover;
