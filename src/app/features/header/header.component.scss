@@ -1,9 +1,12 @@
 @use '../../../styles/variables';
 
 .main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: background-color 0.5s ease;
   border-radius: 0 0 20px 20px;
-  margin-bottom: 60px;
 
   &__link {
     text-decoration: none;
@@ -43,10 +46,10 @@
   }
 
   &.scroll {
-    position: fixed;
+/*    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0;*/
     box-shadow: 0 0 30px rgb(variables.$color-black, 0.5);
     background-color: variables.$link-bg-color;
 

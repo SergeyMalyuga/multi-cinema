@@ -10,7 +10,7 @@ export class ScrollDirective {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     const target = this.elementRef.nativeElement as HTMLElement;
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 10) {
       this.render.addClass(target, 'scroll');
     } else {
       this.render.removeClass(target, 'scroll');
