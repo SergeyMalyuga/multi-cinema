@@ -3,10 +3,11 @@ import { HeaderComponent } from '../../features/header/header.component';
 import { HeroComponent } from '../../features/hero/hero.component';
 import { PopfilmComponent } from '../../features/popfilm/popfilm.component';
 import { WatchLaterComponent } from '../../features/watch-later/watch-later.component';
+import { NewsComponent } from '../../features/news/news.component';
 
 @Component({
   selector: 'app-main',
-  imports: [HeaderComponent, HeroComponent, PopfilmComponent, WatchLaterComponent],
+  imports: [HeaderComponent, HeroComponent, PopfilmComponent, WatchLaterComponent, NewsComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
