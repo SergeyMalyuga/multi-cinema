@@ -1,50 +1,57 @@
 @use '../../../styles/variables';
+@use '../../../assets/scss/functions' as *;
 
 .popfilm {
-  margin: 0 0 210px;
+  margin: 0 0 rem(210);
 
   &__content {
-    width: 1904px;
+    max-width: rem(1904);
+    width: 100%;
     margin: 0 auto;
   }
 
   &__title {
-    font-size: 50px;
+    font-size: rem(50);
     font-weight: 700;
     line-height: 100%;
     letter-spacing: 0;
     text-align: left;
-    margin: 0 0 46px;
+    margin: 0 0 rem(46);
   }
 
   &__card {
-    width: 1172px;
+    max-width:rem(1172);
+    width: 100%;
     margin: 0 auto;
-    padding: 30px 98px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px 0 rgb(146 146 146 / 20%);
+    padding: rem(30) rem(98);
+    border-radius: rem(20);
+    box-shadow: 0 0 rem(30) 0 rgb(146 146 146 / 20%);
     background: variables.$bg-main-color;
   }
 
   &__image {
     display: block;
-    border-radius: 33px;
-    margin: 0 0 25px;
+    border-radius: rem(33);
+    margin: 0 0 rem(25);
+    max-width: rem(976);
+    width: 100%;
+    height: rem(460);
+    object-fit: cover;
   }
 
   &__link {
     display: block;
     margin: 0 auto;
-    padding: 15px 0;
-    width: 924.67px;
-    border-radius: 5px;
-    box-shadow: 0 4px 4px 0 rgb(variables.$color-black, 0.25);
+    padding: rem(15) 0;
+    max-width: rem(924.67);
+    border-radius: rem(5);
+    box-shadow: 0 rem(4) rem(4) 0 rgb(variables.$color-black, 0.25);
     text-align: center;
     text-decoration: none;
     color: variables.$bg-main-color;
-    font-size: 25px;
+    font-size: rem(25);
     font-weight: 700;
-    line-height: 30px;
+    line-height: rem(30);
     background-color: variables.$link-bg-color;
     transition: background-color 0.3s ease,
     transform 0.3s ease;

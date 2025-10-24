@@ -2,40 +2,41 @@
 @use '../../../assets/scss/functions' as *;
 
 .hero {
-  margin: 210px 123px;
+  margin: rem(210) rem(123);
 
   &__container {
-    width: 1904px;
+    max-width: rem(1904);
+    width: 100%;
     margin: 0 auto;
-    padding-left: 123px;
+    padding-left: rem(123);
   }
 
   &__title {
-    width: 1150px;
+    max-width: rem(1150);
     color: variables.$text-main-color;
-    font-size: 80px;
+    font-size: rem(80);
     font-weight: 700;
     text-align: left;
     line-height: 100%;
-    margin: 0 0 51px;
+    margin: 0 0 rem(51);
   }
 
   &__text {
-    margin: 0 0 45px;
-    width: 658px;
+    margin: 0 0 rem(45);
+    max-width: rem(658);
   }
 
   &__link {
     display: block;
     width: rem(529);
     text-decoration: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 4px 0 rgb(variables.$color-black, 0.25);
+    border-radius: rem(5);
+    box-shadow: 0 rem(4) rem(4) 0 rgb(variables.$color-black, 0.25);
     background-color: variables.$link-bg-color;
-    padding: 22px 56px;
-    font-size: 30px;
+    padding: rem(22) rem(56);
+    font-size: rem(30);
     font-weight: 700;
-    line-height: 36px;
+    line-height: rem(36);
     color: variables.$bg-main-color;
     text-align: center;
     transition: background-color 0.3s ease,

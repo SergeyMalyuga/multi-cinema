@@ -1,4 +1,5 @@
 @use '../../../styles/variables';
+@use '../../../assets/scss/functions' as *;
 
 .main-header {
   position: fixed;
@@ -6,7 +7,7 @@
   left: 0;
   right: 0;
   transition: background-color 0.5s ease;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 rem(20) rem(20);
 
   &__link {
     text-decoration: none;
@@ -29,11 +30,12 @@
   }
 
   &__content {
-    width: 1690px;
+    width: 100%;
+    max-width: rem(1690);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 15px;
+    padding: rem(30) rem(15);
     transition: padding 0.5s ease;
   }
 
@@ -46,20 +48,16 @@
   }
 
   &.scroll {
-    /*    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;*/
-    box-shadow: 0 0 30px rgb(variables.$color-black, 0.5);
+    box-shadow: 0 0 rem(30) rgb(variables.$color-black, 0.5);
     background-color: variables.$link-bg-color;
 
     .main-header__content {
-      padding: 10px 15px;
+      padding: rem(10) rem(15);
     }
 
     .main-header__logo {
-      width: 125px;
-      height: 60px;
+      width: rem(125);
+      height: rem(60);
     }
 
     .main-header__link::after {
@@ -70,20 +68,20 @@
   &__list {
     list-style: none;
     display: flex;
-    gap: 118px;
+    gap: rem(118);
     margin: 0;
     padding: 0;
   }
 
   &__actions {
     display: flex;
-    gap: 37px;
+    gap: rem(37);
   }
 
   &__action--search {
     border: none;
     background: none;
-    width: 35px;
+    width: rem(35);
     padding: 0;
     cursor: pointer;
     transition: transform 0.3s ease;
