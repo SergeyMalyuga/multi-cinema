@@ -11,7 +11,7 @@ export default {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['use', 'forward', 'mixin', 'include'],
+        ignoreAtRules: ['use', 'forward', 'mixin', 'include', 'function', 'return'],
       },
     ],
   },

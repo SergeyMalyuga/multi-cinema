@@ -10,7 +10,7 @@
   &__content {
     display: flex;
     gap: 113px;
-    width: 1904px;
+    max-width: 1904px;
     margin: 0 auto 40px;
     padding-left: 123px;
   }
@@ -38,7 +38,7 @@
   }
 
   &__link-wrapper {
-    width: 1904px;
+    max-width: 1904px;
     margin: 0 auto;
   }
 

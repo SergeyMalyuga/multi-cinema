@@ -1,6 +1,14 @@
 @use './styles/variables';
 @use './styles/fonts';
 
+/*@function rem($value) {
+  @return ($value / 25) * 1rem;
+}*/
+
+html {
+  font-size: clamp(0.875rem, 0.6696rem + 0.8765vw, 1.5625rem);;
+}
+
 *,
 *::before,
 *::after {
@@ -12,7 +20,7 @@ body {
   color: variables.$text-main-color;
   background-color: variables.$bg-main-color;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1rem;
   line-height: 30px;
   letter-spacing: 0;
   margin: 0;
