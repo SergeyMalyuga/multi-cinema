@@ -1,7 +1,12 @@
 @use '../../../styles/variables';
 
 .popfilm {
-  margin-bottom: 210px;
+  margin: 0 0 210px;
+
+  &__content {
+    width: 1904px;
+    margin: 0 auto;
+  }
 
   &__title {
     font-size: 50px;
@@ -9,7 +14,7 @@
     line-height: 100%;
     letter-spacing: 0;
     text-align: left;
-    margin: 0 0 46px 123px;
+    margin: 0 0 46px;
   }
 
   &__card {

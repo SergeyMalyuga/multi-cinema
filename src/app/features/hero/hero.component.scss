@@ -1,7 +1,13 @@
 @use '../../../styles/variables';
 
 .hero {
-  margin: 210px 0  210px 123px;
+  margin: 210px 123px;
+
+  &__container {
+    width: 1904px;
+    margin: 0 auto;
+    padding-left: 123px;
+  }
 
   &__title {
     width: 1150px;
@@ -31,9 +37,8 @@
     line-height: 36px;
     color: variables.$bg-main-color;
     text-align: center;
-    transition:
-      background-color 0.3s ease,
-      transform 0.3s ease;
+    transition: background-color 0.3s ease,
+    transform 0.3s ease;
 
     &:hover {
       background-color: variables.$link-bg-color-hover;

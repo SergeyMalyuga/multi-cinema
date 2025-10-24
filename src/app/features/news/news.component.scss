@@ -2,38 +2,53 @@
 
 .news {
   position: relative;
-  padding-top: 144px;
+  background-color: variables.$link-bg-color;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 0 210px;
 
-  &__wrapper {
+  &__content {
     display: flex;
+    gap: 113px;
+    width: 1904px;
+    margin: 0 auto 40px;
+    padding-left: 123px;
   }
 
-  &__title {
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: auto;
+  &__title--main {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  &__title--middle {
+    width: 534px;
+    position: absolute;
+    left: 30px;
+    bottom: 50px;
+    margin: 0;
   }
 
   &__link {
+    display: block;
+    width: fit-content;
     margin-left: auto;
   }
 
-  &::before {
-    content: '';
-    position: absolute;
-    display: block;
+  &__link-wrapper {
     width: 1904px;
-    height: 288px;
-    top: 0;
-    left: 0;
-    background-image: url('../../../assets/images/news-bg-top.png');
-    z-index: -1;
+    margin: 0 auto;
   }
 
   &__image-wrapper {
     position: relative;
     width: 704px;
-    height: 460px;
+    height: 470px;
+    border-radius: 20px;
+    align-self: center;
+    box-shadow: 0 0 30px 5px rgb(0 0 0 / 60%);
 
     &::before {
       content: '';
@@ -44,6 +59,67 @@
       top: 0;
       left: 0;
       background-color: rgb(0 0 0 / 40%);
+      border-radius: 20px;
+    }
+  }
+
+  &__main-image {
+    display: block;
+    border-radius: 20px;
+  }
+
+  &__list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__card {
+    display: flex;
+    gap: 16px;
+
+    h3 {
+      margin: 0 0 15px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    &--column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &--image {
+      border-radius: 15px;
+      box-shadow: 0 0 30px 5px rgb(0 0 0 / 60%);
+    }
+
+    &--link {
+      margin-left: auto;
+      display: block;
+      color: variables.$bg-main-color;
+      text-decoration: none;
+      width: fit-content;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: variables.$bg-main-color;
+        transition: width 0.3s ease;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 }

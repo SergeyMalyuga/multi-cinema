@@ -51,6 +51,12 @@ body {
 }
 
 .container {
+  width: 1904px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 1904px;
   margin: 0 auto;
 }
 
@@ -63,4 +69,31 @@ body {
   overflow: hidden;
   clip-path: inset(50%);
   border: 0;
+}
+
+.link-end-section {
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 100%;
+  width: fit-content;
+  color: variables.$text-main-color;
+  display: block;
+  margin-left: auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: variables.$text-main-color;
+    width: 0;
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
