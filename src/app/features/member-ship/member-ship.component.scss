@@ -1,0 +1,91 @@
+@use '../../../styles/variables';
+@use '../../../assets/scss/functions' as *;
+
+.member-ship {
+  max-width: rem(1659);
+  margin: 0 auto rem(80);
+
+  &__fieldset {
+    border: none;
+    padding: 0;
+    line-height: rem(30);
+  }
+
+  &__legend {
+    width: rem(740);
+    margin-bottom: rem(28);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: stretch;
+    max-width: rem(1100);
+    width: 100%;
+    margin-bottom: rem(20);
+  }
+
+  &__email {
+    width: 100%;
+    border-radius: rem(40);
+    padding-left: rem(60);
+
+    &::placeholder {
+      color: rgb(201 201 201 / 100%);
+      font-size: rem(25);
+      font-weight: 500;
+      letter-spacing: 0;
+
+    }
+  }
+
+  &__submit {
+    border: none;
+    position: relative;
+    max-width: rem(260);
+    width: 100%;
+    top: 0;
+    right: rem(260);
+    border-radius: rem(40);
+    padding: rem(25) rem(53);
+    background: variables.$link-bg-color;
+    color: variables.$bg-main-color;
+    font-size: rem(25);
+    font-weight: 700;
+    line-height: rem(30);
+    letter-spacing: 0;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  &__policy {
+    color: rgb(91 91 91);
+    font-size: rem(16);
+    font-weight: 500;
+    line-height: rem(19);
+    letter-spacing: 0;
+    text-align: left;
+    margin: 0;
+  }
+
+  &__link {
+    width: fit-content;
+    display: inline-block;
+    text-decoration: none;
+    color: variables.$link-bg-color;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      height: rem(2);
+      background-color: variables.$link-bg-color;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}

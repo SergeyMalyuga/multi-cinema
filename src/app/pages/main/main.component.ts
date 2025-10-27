@@ -5,6 +5,7 @@ import { PopfilmComponent } from '../../features/popfilm/popfilm.component';
 import { WatchLaterComponent } from '../../features/watch-later/watch-later.component';
 import { NewsComponent } from '../../features/news/news.component';
 import { ForumComponent } from '../../features/forum/forum.component';
+import { MemberShipComponent } from '../../features/member-ship/member-ship.component';
 
 @Component({
   selector: 'app-main',
@@ -15,6 +16,7 @@ import { ForumComponent } from '../../features/forum/forum.component';
     WatchLaterComponent,
     NewsComponent,
     ForumComponent,
+    MemberShipComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
