@@ -6,6 +6,7 @@ import { WatchLaterComponent } from '../../features/watch-later/watch-later.comp
 import { NewsComponent } from '../../features/news/news.component';
 import { ForumComponent } from '../../features/forum/forum.component';
 import { MemberShipComponent } from '../../features/member-ship/member-ship.component';
+import { FooterComponent } from '../../features/footer/footer.component';
 
 @Component({
   selector: 'app-main',
@@ -17,6 +18,7 @@ import { MemberShipComponent } from '../../features/member-ship/member-ship.comp
     NewsComponent,
     ForumComponent,
     MemberShipComponent,
+    FooterComponent,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',

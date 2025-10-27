@@ -1,0 +1,43 @@
+@use '../../../styles/variables';
+@use '../../../assets/scss/functions' as *;
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: rem(1659);
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: rem(30);
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: rem(118);
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: variables.$text-main-color;
+    font-size: rem(25);
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 1px;
+      inset: 0;
+      background-color: variables.$link-bg-color;
+      transition: width 0.4s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
