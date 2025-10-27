@@ -20,7 +20,7 @@
   }
 
   &__card {
-    max-width:rem(1172);
+    max-width: rem(1172);
     width: 100%;
     margin: 0 auto;
     padding: rem(30) rem(98);
@@ -53,8 +53,9 @@
     font-weight: 700;
     line-height: rem(30);
     background-color: variables.$link-bg-color;
-    transition: background-color 0.3s ease,
-    transform 0.3s ease;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
 
     &:hover {
       background-color: variables.$link-bg-color-hover;

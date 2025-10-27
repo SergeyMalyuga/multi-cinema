@@ -3,7 +3,7 @@
 @use './assets/scss/functions' as *;
 
 html {
-  font-size: clamp(0.875rem, 0.6696rem + 0.8765vw, 1.5625rem);;
+  font-size: clamp(0.875rem, 0.6696rem + 0.8765vw, 1.5625rem);
 }
 
 *,
@@ -87,7 +87,7 @@ body {
   margin-left: auto;
 
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     background-color: variables.$text-main-color;

@@ -14,7 +14,7 @@
     max-width: rem(1904);
     width: 100%;
     margin: 0 auto rem(40);
-    padding-left:rem(123);
+    padding-left: rem(123);
   }
 
   &__title--main {
@@ -49,7 +49,7 @@
     position: relative;
     max-width: rem(704);
     width: 100%;
-    height:rem(470);
+    height: rem(470);
     border-radius: rem(20);
     align-self: center;
     box-shadow: 0 0 rem(30) rem(5) rgb(0 0 0 / 60%);
@@ -58,8 +58,8 @@
       content: '';
       position: absolute;
       display: block;
-      width: 100%;
-      height: 100%;
+      width: rem(704);
+      height: rem(470);
       top: 0;
       left: 0;
       background-color: rgb(0 0 0 / 40%);
@@ -70,8 +70,9 @@
   &__main-image {
     display: block;
     border-radius: rem(20);
-    width: 100%;
-    height: 100%;
+    width: rem(704);
+    height: auto;
+    object-fit: cover;
   }
 
   &__list {
